@@ -19,7 +19,7 @@ function step(startTime) {
     // then we check if it is time to update the frame
     if (timeFromLastUpdate > timePerFrame) {
         // and update it accordingly
-        $element.attr('src', `images/neutuis/Untitled_Artwork-${frameNumber}.png`);
+        $element.attr('src', `images/Neutuis/Untitled_Artwork-${frameNumber}.png`);
         // reset the last update time
         timeWhenLastUpdate = startTime;
 

@@ -46,6 +46,14 @@ function reverseNeutuis() {
     direction = (direction + 1) % 2;
 }
 
+// create a set of hidden divs and set their background-image attribute
+// to required images that will force browser to download the images
+$(document).ready(() => {
+    for (var i = 1; i < totalFrames + 1; i++) {
+        $('body').append(`<div id="preload-image-${i}" <img class="neutuis-animation" src=\`images/Logo/Neutuis-${frameNumber}.png\`></div>`);
+    }
+});
+
 // wait for images to be downloaded and start the animation
 $(window).on('load', () => {
     requestAnimationFrame(step);

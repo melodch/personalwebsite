@@ -1,5 +1,4 @@
 const $element = $('.neutuis-animation');
-// const imagePath = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941';
 const totalFrames = 70;
 const animationDuration = 3500;
 const timePerFrame = animationDuration / totalFrames;
@@ -19,7 +18,7 @@ function step(startTime) {
     // then we check if it is time to update the frame
     if (timeFromLastUpdate > timePerFrame) {
         // and update it accordingly
-        $element.attr('src', `images/Neutuis/Untitled_Artwork-${frameNumber}.png`);
+        $element.attr('src', `images/Logo/Neutuis-${frameNumber}.png`);
         // reset the last update time
         timeWhenLastUpdate = startTime;
 
@@ -46,15 +45,6 @@ function step(startTime) {
 function reverseNeutuis() {
     direction = (direction + 1) % 2;
 }
-
-// create a set of hidden divs
-// and set their background-image attribute to required images
-// that will force browser to download the images
-// $(document).ready(() => {
-//     for (var i = 1; i < totalFrames + 1; i++) {
-//         $('body').append(`<div id="preload-image-${i}" style="background-image: url('${imagePath}/Eye-${i}.svg');"></div>`);
-//     }
-// });
 
 // wait for images to be downloaded and start the animation
 $(window).on('load', () => {

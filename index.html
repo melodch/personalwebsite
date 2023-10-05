@@ -4,19 +4,29 @@
     <meta charset="utf-8">
     <title>Neutuis</title>
     <link rel="stylesheet" href="css/styles.css">
-    <h1>sample title</h1>
-    <!-- animation container TODO: check why this doesn't work in body -->
-    <img class="neutuis-animation"
-         src="images/Neutuis/Untitled_Artwork-1.png"
-         alt="blinking eye animation"/>
-    <p class="neutuis"></p>
-    <button onclick="reverseNeutuis()">Reverse me</button>
-<!--        <button onclick="reverseNeutuis()"><img src="images/Eye-2.jpg" alt="Reverse Neutuis button" /></button>-->
+    <h1>welcome to my website</h1>
 </head>
 <body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script src="js/scripts.js"></script>
-<a target="_blank"
-   href="https://neutuis.tumblr.com/"> Tumblr </a>
+    <!-- The sidebar -->
+    <div class="sidebar">
+        <a class="active" href="./index.html">Home</a>
+        <a href="./me.html">Me</a>
+        <a href="#play">Play</a>
+        <a href="#about">About</a>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <button onclick="reverseNeutuis()">Reverse me</button>
+
+        <!-- animation container -->
+        <img class="neutuis-animation"
+             src="images/Logo/Neutuis-1.png"
+             alt="Spinning logo (neutuis)"/>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

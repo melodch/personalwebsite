@@ -1,0 +1,21 @@
+h1 {
+    color: #A9CBB7;
+    font-size: 20px;
+    /*font-family: "Goudy Bookletter 1911";*/
+    font-family: "Lucida Console", monospace;
+    text-align: left;
+}
+p {
+    color: green;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+/*animation container*/
+.neutuis-animation {
+    width: 500px;
+    /*TODO: look up what this does*/
+    display: block;
+    /*Centers on page*/
+    /*margin: auto;*/
+}

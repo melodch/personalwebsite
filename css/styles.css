@@ -47,7 +47,7 @@ h1 {
 div.content {
     margin-left: 200px;
     padding: 1px 16px;
-    height: 1000px;
+    height: 600px;
 }
 
 /* ---------------- Home ---------------- */
@@ -88,16 +88,57 @@ div.content {
     top: 0;
 }
 
-div.flash {
+div.loremipsum {
     background-color: #fed9ff;
-    width: 800px;
-    height: 250px;
-    margin-left: 400px;
-    overflow-x: auto;
+    /*width: 800px;*/
+    /*height: 250px;*/
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+    /*overflow-x: auto;*/
     overflow-y: auto;
     text-align: center;
     /*padding: 20px;*/
 }
+
+div.flashrow {
+    background-color: #fed9ff;
+    /*width: 800px;*/
+    /*height: 150px;*/
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+    /*overflow-x: auto;*/
+    overflow-y: auto;
+    text-align: center;
+    /*padding: 20px;*/
+}
+
+/*div.flashrow {*/
+/*    background-color: #fed9ff;*/
+/*    max-height: 10px;*/
+/*    !*max-width: 100px;*!*/
+/*    margin: auto;*/
+/*    !*overflow-y: auto;*!*/
+/*    !*text-align: center;*!*/
+/*    !*padding: 20px;*!*/
+/*}*/
+/*div.flashrow2 {*/
+/*    background-color: #fed9ff;*/
+/*    max-height: 10;*/
+/*    margin: auto;*/
+/*    overflow-y: auto;*/
+/*    text-align: center;*/
+/*    !*padding: 20px;*!*/
+/*}*/
+/*div.flashrow3 {*/
+/*    background-color: #fed9ff;*/
+/*    max-height: 10;*/
+/*    margin: auto;*/
+/*    overflow-y: auto;*/
+/*    text-align: center;*/
+/*    !*padding: 20px;*!*/
+/*}*/
 
 /* ---------------- Flexible device ---------------- */
 /* On screens that are less than 700px wide, make the sidebar into a topbar */

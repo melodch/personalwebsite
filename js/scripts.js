@@ -6,7 +6,7 @@ let timeWhenLastUpdate;
 let timeFromLastUpdate;
 let frameNumber = 1;
 let direction = 1;
-let active = 1;
+let active = 0;
 
 // 'step' function will be called each time browser rerender the content
 // we achieve that by passing 'step' as a parameter to the 'requestAnimationFrame' function

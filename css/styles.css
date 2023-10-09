@@ -2,8 +2,10 @@
 h1 {
     /*color: #A9CBB7;*/
     font-size: 30px;
-    margin-left: 200px;
-    /*font-family: "Lucida Console", monospace;*/
+    font-smooth: never;
+    -webkit-font-smoothing : none;
+    margin-left: 180px;
+    font-family: "Comic Sans MS";
     text-align: center;
 }
 
@@ -11,6 +13,7 @@ h1 {
 /* The side navigation menu */
 .sidebar {
     font-size: 20px;
+    font-family: "Comic Sans MS";
     margin: 0;
     /*padding: 0;*/
     width: 200px;
@@ -47,10 +50,20 @@ h1 {
 div.content {
     margin-left: 200px;
     padding: 1px 16px;
-    height: 600px;
+    height: 450px;
 }
 
 /* ---------------- Home ---------------- */
+.home {
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    width: 80%;
+    max-width: 100%;
+    display: block;
+    z-index:-1;
+    /*top: 0;*/
+}
 
 /* ---------------- Personal links ---------------- */
 .personallinks {
@@ -68,13 +81,13 @@ div.content {
 .personallinks a {
     display: block;
     padding: 5px;
-    color: rebeccapurple;
+    color: #fed9ff;
     text-decoration: none;
 }
 
 /*!* Links on mouse-over *!*/
 .personallinks a:hover:not(.active) {
-    background-color: rebeccapurple;
+    background-color: #fed9ff;
     color: white;
 }
 
@@ -88,57 +101,64 @@ div.content {
     top: 0;
 }
 
-div.loremipsum {
+div.wrapper {
+    top: 0;
+}
+
+
+div.stencilflashtext {
     background-color: #fed9ff;
     /*width: 800px;*/
     /*height: 250px;*/
+    width: 800px;
     max-width: 100%;
     max-height: 100vh;
-    margin: auto;
+    /*margin: auto;*/
     /*overflow-x: auto;*/
-    overflow-y: auto;
+    font-family: "Comic Sans MS";
+    /*overflow-y: auto;*/
     text-align: center;
-    /*padding: 20px;*/
+    padding: 10px;
 }
 
-div.flashrow {
+div.stencilflashimages {
+    background-color: #fed9ff;
+    width: 800px;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+div.stencilflashimages img {
+    height: 260px;
+}
+
+div.pencilflashtext {
     background-color: #fed9ff;
     /*width: 800px;*/
-    /*height: 150px;*/
+    /*height: 250px;*/
+    width: 800px;
     max-width: 100%;
     max-height: 100vh;
-    margin: auto;
+    /*margin: auto;*/
     /*overflow-x: auto;*/
-    overflow-y: auto;
+    font-family: "Comic Sans MS";
+    /*overflow-y: auto;*/
     text-align: center;
-    /*padding: 20px;*/
+    padding: 10px;
 }
 
-/*div.flashrow {*/
-/*    background-color: #fed9ff;*/
-/*    max-height: 10px;*/
-/*    !*max-width: 100px;*!*/
-/*    margin: auto;*/
-/*    !*overflow-y: auto;*!*/
-/*    !*text-align: center;*!*/
-/*    !*padding: 20px;*!*/
-/*}*/
-/*div.flashrow2 {*/
-/*    background-color: #fed9ff;*/
-/*    max-height: 10;*/
-/*    margin: auto;*/
-/*    overflow-y: auto;*/
-/*    text-align: center;*/
-/*    !*padding: 20px;*!*/
-/*}*/
-/*div.flashrow3 {*/
-/*    background-color: #fed9ff;*/
-/*    max-height: 10;*/
-/*    margin: auto;*/
-/*    overflow-y: auto;*/
-/*    text-align: center;*/
-/*    !*padding: 20px;*!*/
-/*}*/
+div.pencilflashimages {
+    background-color: #fed9ff;
+    width: 800px;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+div.pencilflashimages img {
+    height: 260px;
+}
 
 /* ---------------- Flexible device ---------------- */
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
